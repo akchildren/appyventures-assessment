@@ -25,7 +25,7 @@ class UpdateTaskTest extends TestCase
     /**
      * @var string
      */
-    private string $endpoint = '/api/tasks';
+    private string $endpoint = '/api/v1/tasks';
 
     /**
      * @var Collection|Model|User

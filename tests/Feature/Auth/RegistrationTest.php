@@ -9,7 +9,7 @@ class RegistrationTest extends TestCase
 {
     use RefreshDatabase;
 
-    private string $endpoint = '/api/register';
+    private string $endpoint = '/api/v1/register';
 
     public function test_new_users_can_register(): void
     {

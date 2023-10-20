@@ -14,7 +14,7 @@ class LoginTest extends TestCase
     /**
      * @var string
      */
-    private string $endpoint = '/api/login';
+    private string $endpoint = '/api/v1/login';
 
     /**
      * @throws \JsonException
