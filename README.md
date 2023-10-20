@@ -27,7 +27,7 @@ https://api.postman.com/collections/30633756-1cf61e50-e5e8-4c9c-8540-c9261f257a2
 
 ### Steps
 Do the following below in order using a terminal of your choice
-- `git clone https://github.com/akchildren/appyventure-todo.git`
+- `git clone https://github.com/akchildren/appyventures-assessment.git`
 -  `cd` to this repository root
 -  `cp .env.example .env`
 - 
