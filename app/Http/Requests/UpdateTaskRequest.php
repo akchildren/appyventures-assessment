@@ -17,16 +17,16 @@ class UpdateTaskRequest extends FormRequest
     {
         return [
             'title' => [
-                'required',
+                'nullable',
                 'string',
                 'max:150'
             ],
             'description' => [
-                'required',
+                'nullable',
                 'string'
             ],
             'due_date' => [
-                'required',
+                'nullable',
                 'date',
             ],
             'status' => [
