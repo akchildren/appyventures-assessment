@@ -7,16 +7,16 @@ use App\Http\Requests\UpdateTaskRequest;
 use App\Http\Resources\TaskResource;
 use App\Models\Task;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request): TaskResource
+    public function index(): TaskResource
     {
-        $tasks = Task::whereUserId($request->user()->id)->get();
+        $tasks = Task::whereUserId(Auth::user()->id)->get();
         return new TaskResource($tasks);
     }
 
