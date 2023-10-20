@@ -11,6 +11,7 @@
 - Write tests for your API endpoints using PHPUnit.
 
 ### Recorded Attempt
+https://www.youtube.com/watch?v=EIEs22jkC8c
 
 ### Swagger Docs
 https://app.swaggerhub.com/apis/ADAMCHILDREN/testswagger/1.0.0#/User/createUser
