@@ -35,6 +35,15 @@ class Task extends Model
     ];
 
     /**
+     * The model's default values for attributes.
+     *
+     * @var array
+     */
+    protected $attributes = [
+        'status' => 'pending'
+    ];
+
+    /**
      * @return BelongsTo
      */
     public function user(): BelongsTo
