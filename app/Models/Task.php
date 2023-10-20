@@ -30,7 +30,7 @@ class Task extends Model
     protected $casts = [
         'title' => 'string',
         'description' => 'string',
-        'email_verified_at' => 'datetime',
+        'due_date' => 'datetime',
         'status' => 'string',
     ];
 

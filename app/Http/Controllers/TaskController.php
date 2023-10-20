@@ -4,38 +4,36 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
+use App\Http\Resources\TaskResource;
 use App\Models\Task;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Facades\Request;
 
 class TaskController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request): TaskResource
     {
-        //
+        $tasks = Task::whereUserId($request->user()->id)->get();
+        return new TaskResource($tasks);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * @param StoreTaskRequest $request
+     * @return TaskResource
      */
-    public function create()
+    public function store(StoreTaskRequest $request): TaskResource
     {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreTaskRequest $request)
-    {
-        //
+        $task = $request->user()->tasks()->create($request->safe()->toArray());
+        return new TaskResource($task);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Task $task)
+    public function show(Task $task): JsonResponse
     {
         //
     }
@@ -43,7 +41,7 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTaskRequest $request, Task $task)
+    public function update(UpdateTaskRequest $request, Task $task): JsonResponse
     {
         //
     }
@@ -51,7 +49,7 @@ class TaskController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Task $task)
+    public function destroy(Task $task): JsonResponse
     {
         //
     }
