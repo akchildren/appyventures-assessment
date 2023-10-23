@@ -44,7 +44,7 @@ Do the following below in order using a terminal of your choice
 - `sail artisan key:generate`
 - `sail artisan migrate:fresh`
 
-Congratulations you should have a localhost accessible at `http://localhost:80` or `http://localhost/api/v1` for api routes.
+Congratulations you should have a localhost accessible at `http://localhost:80` or `http://localhost:80/api/v1` for api routes.
 
 ### Running Tests after local setup
 `sail artisan test`
