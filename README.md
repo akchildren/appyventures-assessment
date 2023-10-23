@@ -83,3 +83,6 @@ The postman collection has been setup to use the following env vars:
 	"_postman_exported_using": "Postman/10.19.6"
 }
 ```
+
+### Final Thoughts
+The tasks resourceful routes should not be plural as if this was to follow the correct restful api routing conventioning it would be singular (i.e. `task/`). 
