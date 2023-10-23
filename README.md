@@ -26,11 +26,11 @@ https://api.postman.com/collections/30633756-1cf61e50-e5e8-4c9c-8540-c9261f257a2
 - git
 
 ### Steps
-Do the following below in order using a terminal of your choice
-- `git clone https://github.com/akchildren/appyventures-assessment.git`
--  `cd` to this repository root
--  `cp .env.example .env`
-- 
+Do the following below in order using a linux distro of your choice:
+1. `git clone https://github.com/akchildren/appyventures-assessment.git`
+2.  `cd` to this repository root
+3.  `cp .env.example .env`
+4. 
     ```shell
     docker run --rm \
         -u "$(id -u):$(id -g)" \
@@ -39,10 +39,10 @@ Do the following below in order using a terminal of your choice
         laravelsail/php82-composer:latest \
         composer install --ignore-platform-reqs
     ```
-- `alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'`
-- `sail up -d`
-- `sail artisan key:generate`
-- `sail artisan migrate:fresh`
+5. `alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'`
+6. `sail up -d`
+7. `sail artisan key:generate`
+8. `sail artisan migrate:fresh`
 
 Congratulations you should have a localhost accessible at `http://localhost:80` or `http://localhost:80/api/v1` for api routes.
 
