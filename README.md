@@ -14,7 +14,7 @@
 https://www.youtube.com/watch?v=EIEs22jkC8c
 
 ### Swagger Docs
-https://app.swaggerhub.com/apis/ADAMCHILDREN/testswagger/1.0.0#/User/createUser
+https://app.swaggerhub.com/apis/ADAMCHILDREN/testswagger/1.0.0
 
 ### Postman Collection
 https://api.postman.com/collections/30633756-1cf61e50-e5e8-4c9c-8540-c9261f257a2e?access_key=PMAT-01HD7D6EMD2S873FSEEN5JBE7V
