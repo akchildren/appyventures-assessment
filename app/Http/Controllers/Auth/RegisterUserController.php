@@ -10,7 +10,7 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class RegisteredUserController extends Controller
+class RegisterUserController extends Controller
 {
     /**
      * Handle an incoming registration request.
