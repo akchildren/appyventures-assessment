@@ -1,4 +1,6 @@
 # Appyventures stage 2 coding challenge
+### Result
+Passed
 
 ## Tasks Covered [Backend (Laravel)]
 
